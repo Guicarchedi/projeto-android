@@ -1,0 +1,32 @@
+/* RESPONSIVIDADE TABLET */
+@media screen and (max-width: 768px) {
+    header p {
+        width: 80%;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    article {
+        padding: 0.5rem;
+    }
+
+    article h1, article h2 {
+        font-size: 1.5em;
+    }
+
+    article p, aside p {
+        font-size: 1em;
+        line-height: 28px;
+    }
+
+    article aside ul {
+        columns: 1;
+    }
+
+    #bugdroid {
+        width: 70%;
+    }
+}

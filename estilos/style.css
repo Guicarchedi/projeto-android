@@ -1,0 +1,214 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+    font-family: 'android';
+    src: url('fontes/idroid.otf') format('opentype');
+}
+
+:root{
+    --fundo: #77cca69d;
+    --h1: #307556;
+    --h2: #23A86C;
+    --header: #3DDC84;
+
+    --fontAndroid: 'Android';
+    --fontP: "Roboto", sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--fundo);
+    font-family: var(--fontP);
+}
+
+header{
+    background-image: linear-gradient(to bottom, var(--header), var(--h1));
+    color: white;
+    text-align: center;
+    padding: 2rem;
+
+    & h1{
+        font-family: var(--fontP);
+        font-size: 3em;
+        font-weight: 300;
+        text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.815);
+        margin-bottom: 1rem;
+    }
+
+    & p{
+        width: 35%;
+        margin: 0 auto;
+    }
+}
+
+nav{
+    background-color: var(--h1);
+    padding: 0.8rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+    & a{
+        color: white;
+        font-family: var(--fontP);
+        font-size: 0.9em;
+        font-weight: bold;
+        text-decoration: none;
+        border-radius: 10px;
+        padding: 5px;
+        transition: 0.5s;
+    }
+
+    & a:hover{
+        background-color: var(--fundo);
+        text-decoration: underline;
+        font-size: 1em;
+        padding: 7px;
+    }
+}
+
+article{
+    background-color: white;
+    min-width: 300px;
+    max-width: 1000px;
+    padding: 1rem;
+    margin: 0 auto;
+
+    & h1{
+        color: var(--h1);
+        font-family: var(--fontAndroid);
+        font-size: 2em;
+        text-align: center;
+        margin: 1rem;
+    }
+
+    & h2{
+        color: var(--h2);
+        font-family: var(--fontAndroid);
+        font-size: 1.5em;
+        text-indent: 10px;
+        margin: 1em;
+    }
+
+    & p{
+        font-family: var(--fontP);
+        font-size: 1.1em;
+        text-align: justify;
+        line-height: 35px;
+        text-indent: 30px;
+        margin: 0 1rem 1.3rem 1rem;
+    }
+
+    & .img-modelar{
+        width: 100%;
+    }
+
+    & #bugdroid{
+        width: 50%;
+        display: block;
+        margin: auto;
+    }
+
+    & .video{
+        background-color: var(--h1);
+        margin: 0 -20px 30px -20px;
+        padding: 20px;
+        padding-bottom: 59%;
+        position: relative;
+
+        & iframe{
+            position: absolute;
+            top: 5%;
+            left: 5%;
+            width: 90%;
+            height: 90%;
+        }
+    }
+
+    & aside{
+        background-color: var(--fundo);
+        border-radius: 10px;
+        padding: 1rem;
+
+        & h3{
+            background-color: var(--h1);
+            color: white;
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px;
+            padding: 1rem;
+            margin: -1rem -1rem 1rem -1rem;
+
+        }
+
+        & p{
+            font-family: var(--fontP);
+            font-size: 1.1em;
+            text-align: justify;
+            line-height: 35px;
+            text-indent: 30px;
+            margin: 0 1rem 1.3rem 1rem;
+        }
+
+        & ul{
+            list-style-type: '\1F5F8\00A0';
+            columns: 2;
+            list-style-position: inside;
+            margin-bottom: 1rem;
+        }
+    }
+
+    & .margin-top{
+        margin-top: 1rem;
+    }
+}
+
+strong{
+    color: var(--h1);
+}
+
+a{
+    background-color: #77cca62c;
+    color: var(--h2);
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0.2rem;
+}
+
+a:hover{
+    color: var(--h1);
+    text-decoration: underline;
+}
+
+footer{
+    background-color: var(--h1);
+    color: white;
+    text-align: center;
+    padding: 0.2rem;
+    margin-top: 1rem;
+
+    & p{
+        font-family: var(--fontP);
+        font-size: 0.9em;
+        font-weight: 300;
+
+        & .link-footer{
+            color: white;
+            font-family: var(--fontP);
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        & .link-footer:hover{
+            color: rgb(178, 255, 174);
+            text-decoration: underline;
+        }
+    }
+}
